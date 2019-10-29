@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:stretchColumns="0,1,2,3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@color/colorFondoBotones"
+            android:textColor="@color/colorTextoBotones">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:textSize="40sp"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:textColor="@color/colorTextoBotones">
+
+            </TextView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="1"
+            android:background="#000000">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotonesOps"
+                android:text="AC" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotonesOps"
+                android:text="CLEAR" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotonesOps"
+                android:text="%" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotonesOps"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="1"
+            android:background="#000000">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotones"
+                android:text="7" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotones"
+                android:text="8" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotones"
+                android:text="9" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotonesOps"
+                android:text="*" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#000000">
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotones"
+                android:text="4" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotones"
+                android:text="5" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotones"
+                android:text="6" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotonesOps"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="1"
+            android:background="#000000">
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotones"
+                android:text="1" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotones"
+                android:text="2" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotones"
+                android:text="3" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotonesOps"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+
+            android:layout_weight="1"
+            android:background="#000000">
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotonesOps"
+                android:text="AD" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotones"
+                android:text="0" />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotonesOps"
+                android:text="." />
+
+            <Button
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_column="0"
+                android:textSize="24sp"
+                android:background="@color/colorFondoBotones"
+                android:textColor="@color/colorTextoBotonesOps"
+                android:text="=" />
+        </TableRow>
+
+
+    </TableLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
