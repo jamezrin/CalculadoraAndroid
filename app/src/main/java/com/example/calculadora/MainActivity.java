@@ -1,13 +1,10 @@
 package com.example.calculadora;
 
-import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -256,18 +253,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private final class OperacionPorcentaje implements Operacion {
-        private int contadorInteracciones = 0;
-
         @Override
         public void ejecutar(TextView pantalla, TextView pantallaPrev, TextView pantallaOperacion) {
-            if (contadorInteracciones++ < 3) {
-                Toast.makeText(MainActivity.this, "Kitipasa cabron",
-                        Toast.LENGTH_LONG
-                ).show();
-            } else {
-                Toast.makeText(MainActivity.this, "Mira eh me cago en tus muertos pesao",
-                        Toast.LENGTH_LONG
-                ).show();
+            if (tieneNumeroValido(pantalla.getText().toString())) {
+                double numero = Double.parseDouble(pantalla.getText().toString());
+                double resultado = numero / 100;
+
+                String resultadoPantalla = Double.toString(resultado);
+                if (resultado % 1 == 0) {
+                    resultadoPantalla = resultadoPantalla.substring(
+                            0, resultadoPantalla.indexOf(".")
+                    );
+                }
+
+                pantalla.setText(resultadoPantalla);
             }
         }
     }
