@@ -137,7 +137,9 @@ public class MainActivity extends AppCompatActivity {
 
                 operacionActual = tipoOperacion;
                 pantallaOperacion.setText(tipoOperacion.getSimbolo());
-            } else if (pantalla.getText().length() == 0 && operacionActual == TipoOperacion.NULA && tipoOperacion == TipoOperacion.RESTA) {
+            } else if (pantalla.getText().length() == 0
+                    && operacionActual == TipoOperacion.NULA
+                    && tipoOperacion == TipoOperacion.RESTA) {
                 pantalla.setText(tipoOperacion.getSimbolo());
             } else {
                 operacionActual = tipoOperacion;
@@ -211,9 +213,9 @@ public class MainActivity extends AppCompatActivity {
                 };
 
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-                builder.setMessage("¿Estas seguro que quieres salir?")
-                        .setPositiveButton("Si", dialogClickListener)
-                        .setNegativeButton("No", dialogClickListener)
+                builder.setMessage(R.string.exit_question)
+                        .setPositiveButton(R.string.yes, dialogClickListener)
+                        .setNegativeButton(R.string.no, dialogClickListener)
                         .show();
             }
         }

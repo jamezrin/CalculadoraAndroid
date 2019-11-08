@@ -81,11 +81,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_column="0"
-                android:textSize="24sp"
                 android:background="@color/colorFondoBotones"
                 android:textColor="@color/colorTextoBotonesOps"
                 android:id="@+id/calc_back"
-                android:text="BACK" />
+                android:text="BORRAR"
+                android:textSize="20sp" />
 
             <Button
                 android:layout_width="match_parent"
